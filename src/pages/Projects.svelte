@@ -11,7 +11,16 @@
 
 <style lang="scss">
 	article {
+		width: 70%;
+		max-width: 1000px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+	}
+
+	@media (max-width: 640px) {
+		article {
+			grid-template-columns: 1fr;
+		}
 	}
 </style>

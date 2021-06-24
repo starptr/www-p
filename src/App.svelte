@@ -33,7 +33,7 @@
 		<p>contact</p>
 	{/if}
 	<footer>
-		<p>foot</p>
+		<p />
 	</footer>
 </main>
 
