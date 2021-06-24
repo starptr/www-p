@@ -2,60 +2,71 @@
 	{
 		"name": "pecho",
 		"description": "An echo(1) alternative with easy coloring/styling flags",
+		"tech": "Rust",
 		"source": "https://github.com/starptr/pecho"
 	},
 	{
 		"name": "snakegame.nvim",
 		"description": "Play a classic game of snake in a Neovim buffer",
+		"tech": "Python",
 		"source": "https://github.com/starptr/nvim-snakegame"
 	},
 	{
 		"name": "Now Playing",
 		"description": "Show off what you're listening to live on Spotify through this REST API proxy server",
+		"tech": "Node.js",
 		"source": "https://github.com/starptr/now-playing-api"
 	},
 	{
 		"name": "uni2code",
 		"description": "Convert strings to strings through a custom (js) mapping",
+		"tech": "React",
 		"source": "https://github.com/starptr/uni2code",
 		"live": "https://uni2code.yart.me/"
 	},
 	{
 		"name": "qResistance (client)",
 		"description": "Deduce who the spies are in this online clone of Avalon",
+		"tech": "React",
 		"source": "https://github.com/starptr/qresistance-client",
 		"live": "https://qresistance.netlify.app/"
 	},
 	{
 		"name": "qResistance (server)",
 		"description": "qResistance backend",
+		"tech": "Node.js",
 		"source": "https://github.com/starptr/qresistance-server"
 	},
 	{
 		"name": "Groupie",
 		"description": "Port of Slack's usergroup feature to Discord",
+		"tech": "Node.js",
 		"source": "https://github.com/starptr/groupie"
 	},
 	{
 		"name": "Wiggler",
 		"description": "Automatically switch your Slack profile pic at certain times of day",
+		"tech": "Node.js",
 		"source": "https://github.com/starptr/Wiggler"
 	},
 	{
 		"name": "Eartrain",
 		"description": "Train your relative pitch by identifying notes in a 24-tone equal temperate scale",
+		"tech": "jQuery",
 		"source": "https://github.com/starptr/EarTrain",
 		"live": "http://eartrain.surge.sh/"
 	},
 	{
 		"name": "qtpiano",
 		"description": "Demo 24-tone piano",
+		"tech": "jQuery",
 		"source": "https://github.com/starptr/Quarter-Tone-Piano",
 		"live": "http://qtpiano.surge.sh/"
 	},
 	{
 		"name": "PingPongBall",
 		"description": "Demo ping pong ball animation using POV-Ray",
+		"tech": "POV-Ray",
 		"source": "https://github.com/starptr/Povray_PingPongBall",
 		"live": "http://people.math.harvard.edu/~knill/teaching/summer2019/exhibits/pingpong/index.html"
 	}
