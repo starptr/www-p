@@ -8,7 +8,7 @@
 		Contact,
 	}
 	let PageTypeIterable = Object.values(Page).filter(val => typeof val !== "number");
-	let currentPage = Page.Projects;
+	let currentPage = Page.Main;
 
 	const handlePageClick = (page: Page) => {
 		currentPage = page;
