@@ -20,6 +20,7 @@
 		React: { component: React, css: "react" },
 		jQuery: { component: JQuery, css: "jquery" },
 		"POV-Ray": { component: null, css: "povray" },
+		Svelte: { component: null, css: "svelte" },
 	};
 </script>
 
@@ -38,6 +39,8 @@
 			<div class={`icon ${techs[tech].css}`}>
 				{#if tech === "POV-Ray"}
 					<img src="/images/pov-ray.png" width="22" alt="POV-Ray icon" />
+				{:else if tech === "Svelte"}
+					<img class="svelte" src="/images/svelte.png" width="27" alt="Svelte icon" />
 				{:else}
 					<svelte:component this={techs[tech].component} />
 				{/if}
@@ -58,6 +61,9 @@
 </div>
 
 <style lang="scss">
+	.svelte {
+		filter: grayscale(100%);
+	}
 	.description {
 		margin-top: 0.5em;
 		margin-bottom: 0.5em;

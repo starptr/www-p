@@ -1,5 +1,11 @@
 [
 	{
+		"name": "monocle",
+		"description": "Query PostgreSQL servers via a friendly self-hosted webapp",
+		"tech": "Svelte",
+		"source": "https://github.com/starptr/monocle"
+	},
+	{
 		"name": "pecho",
 		"description": "An echo(1) alternative with easy coloring/styling flags",
 		"tech": "Rust",
