@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Main from "./pages/Main.svelte";
 	import Projects from "./pages/Projects.svelte";
-    import { enumToStrMapFactory } from "./lib/utils";
 
     const Pages = [
         "Main", "Projects", "Contact",
