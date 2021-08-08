@@ -40,7 +40,7 @@
 				{#if tech === "POV-Ray"}
 					<img src="/images/pov-ray.png" width="22" alt="POV-Ray icon" />
 				{:else if tech === "Svelte"}
-					<img class="svelte" src="/images/svelte.png" width="27" alt="Svelte icon" />
+					<img src="/images/svelte.png" width="27" alt="Svelte icon" />
 				{:else}
 					<svelte:component this={techs[tech].component} />
 				{/if}

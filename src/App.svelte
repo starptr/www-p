@@ -1,33 +1,35 @@
 <script lang="ts">
 	import Main from "./pages/Main.svelte";
 	import Projects from "./pages/Projects.svelte";
-	//export let name: string;
-	enum Page {
-		Main,
-		Projects,
-		Contact,
-	}
-	let PageTypeIterable = Object.values(Page).filter(val => typeof val !== "number");
-	let currentPage = Page.Main;
+    import { enumToStrMapFactory } from "./lib/utils";
 
-	const handlePageClick = (page: Page) => {
+    const Pages = [
+        "Main", "Projects", "Contact",
+    ];
+
+	let currentPage = Pages[0];
+
+	const handlePageClick = (page: string) => {
 		currentPage = page;
 	};
 </script>
 
+<svelte:head>
+    <title>{currentPage}</title>
+</svelte:head>
 <main>
 	<header>
 		<div class="menu">
-			{#each PageTypeIterable as page}
-				<button class="menuButton" on:click={() => handlePageClick(Page[page])}>
+			{#each Pages as page}
+				<button class="menuButton" on:click={() => handlePageClick(page)}>
 					{page}
 				</button>
 			{/each}
 		</div>
 	</header>
-	{#if currentPage === Page.Main}
+	{#if currentPage === "Main"}
 		<Main />
-	{:else if currentPage === Page.Projects}
+	{:else if currentPage === "Projects"}
 		<Projects />
 	{:else}
 		<p>contact</p>
