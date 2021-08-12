@@ -2,9 +2,7 @@
 	import Main from "./pages/Main.svelte";
 	import Projects from "./pages/Projects.svelte";
 
-    const Pages = [
-        "Main", "Projects", "Contact",
-    ];
+	const Pages = ["Main", "Projects"];
 
 	let currentPage = Pages[0];
 
@@ -14,7 +12,7 @@
 </script>
 
 <svelte:head>
-    <title>{currentPage}</title>
+	<title>Yuto Nishida</title>
 </svelte:head>
 <main>
 	<header>
@@ -28,10 +26,8 @@
 	</header>
 	{#if currentPage === "Main"}
 		<Main />
-	{:else if currentPage === "Projects"}
-		<Projects />
 	{:else}
-		<p>contact</p>
+		<Projects />
 	{/if}
 	<footer>
 		<p />
