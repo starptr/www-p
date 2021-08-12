@@ -1,10 +1,30 @@
 [
+    {
+        "name": "RoomieBank",
+        "description": "Simple organizer for reimbursing supplies from a shared bank account",
+        "tech": ["Next.js", "MongoDB"],
+        "source": "https://github.com/starptr/RoomieBank",
+        "live": "https://roomie-bank.vercel.app/"
+    },
+    {
+        "name": "www-p",
+        "description": "My SWE portfolio page",
+        "tech": "Svelte",
+        "source": "https://github.com/starptr/www-p",
+        "live": "https://yuto.sh"
+    },
 	{
 		"name": "monocle",
 		"description": "Query PostgreSQL servers via a friendly self-hosted webapp",
 		"tech": "Svelte",
 		"source": "https://github.com/starptr/monocle"
 	},
+    {
+        "name": "day-n-nite",
+        "description": "Global light/dark theme toggler for both GUI and CLI",
+        "tech": "Rust",
+        "source": "https://github.com/starptr/day-n-nite"
+    },
 	{
 		"name": "pecho",
 		"description": "An echo(1) alternative with easy coloring/styling flags",

@@ -1,9 +1,11 @@
 <script lang="ts">
 	export let name: string;
 	export let description: string;
-	export let tech: string = "Rust";
+	export let tech: string | string[] = "Rust";
 	export let source: string | undefined;
 	export let live: string | undefined;
+
+	if (typeof tech === "string") tech = [tech];
 
 	import Launch from "svelte-icons/md/MdLaunch.svelte";
 	import GitHub from "svelte-icons/fa/FaGithub.svelte";
@@ -12,6 +14,10 @@
 	import React from "svelte-icons/di/DiReact.svelte";
 	import Python from "svelte-icons/di/DiPython.svelte";
 	import JQuery from "svelte-icons/di/DiJqueryLogo.svelte";
+	import POVRay from "../components/icons/POVRay.svelte";
+	import Svelte from "../components/icons/Svelte.svelte";
+	import Nextjs from "../components/icons/Nextjs.svelte";
+	import MongoDB from "svelte-icons/di/DiMongodb.svelte";
 
 	let techs = {
 		Rust: { component: Rust, css: "rust" },
@@ -19,8 +25,10 @@
 		"Node.js": { component: Nodejs, css: "nodejs" },
 		React: { component: React, css: "react" },
 		jQuery: { component: JQuery, css: "jquery" },
-		"POV-Ray": { component: null, css: "povray" },
-		Svelte: { component: null, css: "svelte" },
+		"POV-Ray": { component: POVRay, css: "povray" },
+		Svelte: { component: Svelte, css: "svelte" },
+		"Next.js": { component: Nextjs, css: "nextjs" },
+		MongoDB: { component: MongoDB, css: "mongodb" },
 	};
 </script>
 
@@ -36,16 +44,12 @@
 	</summary>
 	<footer>
 		<div class="tech-pair">
-			<div class={`icon ${techs[tech].css}`}>
-				{#if tech === "POV-Ray"}
-					<img src="/images/pov-ray.png" width="22" alt="POV-Ray icon" />
-				{:else if tech === "Svelte"}
-					<img src="/images/svelte.png" width="27" alt="Svelte icon" />
-				{:else}
+			{#each tech as tech}
+				<div class={`icon ${techs[tech].css}`}>
 					<svelte:component this={techs[tech].component} />
-				{/if}
-			</div>
-			<p>{tech}</p>
+				</div>
+				<p>{tech}</p>
+			{/each}
 		</div>
 		{#if source}
 			<a class="tech-pair" href={source} target="_blank">
@@ -97,6 +101,12 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+	}
+
+	.nextjs {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	h2,

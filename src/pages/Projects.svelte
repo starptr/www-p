@@ -18,7 +18,7 @@
 		grid-gap: 20px;
 	}
 
-	@media (max-width: 640px) {
+	@media (max-width: 780px) {
 		article {
 			grid-template-columns: 1fr;
 		}
